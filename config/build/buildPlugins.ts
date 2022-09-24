@@ -4,7 +4,7 @@ import HTMLWebpackPlugin from "html-webpack-plugin";
 import {BuildOptions} from "./types/config";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
-export function buildPlugins({paths}: BuildOptions): webpack.WebpackPluginInstance[] {
+export function buildPlugins({paths, isDev}: BuildOptions): webpack.WebpackPluginInstance[] {
 
   return [
     new HTMLWebpackPlugin({
@@ -15,5 +15,9 @@ export function buildPlugins({paths}: BuildOptions): webpack.WebpackPluginInstan
       filename: 'css/[name].[contenthash:8].css',
       chunkFilename: 'css/[name].[contenthash:8].css',
     }),
+      //__IS_DEV__ так называем глоб переменные сборки, чтобы четко их отделять от переменных
+      new webpack.DefinePlugin({
+        __IS_DEV__: JSON.stringify(isDev),
+      })
   ]
 }
