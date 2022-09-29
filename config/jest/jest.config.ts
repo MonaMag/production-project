@@ -104,7 +104,7 @@ export default {
     // A preset that is used as a base for Jest's configuration
     // preset: undefined,
 
-    // Run tests from one or more projects
+    // Run tests from one or more
     // projects: undefined,
 
     // Use this configuration option to add custom reporters to Jest
@@ -116,7 +116,7 @@ export default {
     // Reset the module registry before running each individual test
     // resetModules: false,
 
-    // A path to a custom resolver
+    // A path to a custom
     // resolver: undefined,
 
     // Automatically restore mock state and implementation before every test
