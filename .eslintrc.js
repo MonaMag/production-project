@@ -44,7 +44,7 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreProperty: ['data-testid'],
+                ignoreProperty: ['data-testid', 'to'],
             },
         ],
         'max-len': ['warn', { code: 100, ignoreComments: true }],
