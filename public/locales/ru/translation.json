@@ -10,5 +10,9 @@
   "Обновить страницу": "Обновить страницу",
   "Ошибка": "Ошибка",
   "Переключить": "Переключить",
-  "Короткий язык": "Ru"
+  "Короткий язык": "Ru",
+  "Войти": "Войти",
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
+    " Adipisci doloremque dolorum explicabo incidunt labore numquam provident rem repellendus ullam velit": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci doloremque dolorum explicabo incidunt labore numquam provident rem repellendus ullam velit"
+  }
 }

@@ -10,5 +10,9 @@
   "Обновить страницу": "Refresh the page",
   "Ошибка": "throw error",
   "Переключить": "TOGGLE",
-  "Короткий язык": "En"
+  "Короткий язык": "En",
+  "Войти": "Login",
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
+    " Adipisci doloremque dolorum explicabo incidunt labore numquam provident rem repellendus ullam velit": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci doloremque dolorum explicabo incidunt labore numquam provident rem repellendus ullam velit"
+  }
 }
