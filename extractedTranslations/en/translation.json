@@ -3,6 +3,8 @@
     " Adipisci doloremque dolorum explicabo incidunt labore numquam provident rem repellendus ullam velit": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci doloremque dolorum explicabo incidunt labore numquam provident rem repellendus ullam velit"
   },
   "TOGGLE": "TOGGLE",
+  "decrement": "decrement",
+  "increment": "increment",
   "Войти": "Войти",
   "Главная": "",
   "О сайте": "",
