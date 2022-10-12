@@ -1,7 +1,7 @@
 import { CounterSchema } from 'entities/Counter';
 import { counterActions, counterReducer } from './counterSlice';
 
-describe('counterSlice.test', () => {
+describe('userSlice.test', () => {
     test('decrement', () => {
         const state: CounterSchema = { value: 10 };
         expect(

@@ -16,5 +16,7 @@
     " Adipisci doloremque dolorum explicabo incidunt labore numquam provident rem repellendus ullam velit": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci doloremque dolorum explicabo incidunt labore numquam provident rem repellendus ullam velit"
   },
   "увеличить": "increment",
-  "уменьшить": "decrement"
+  "уменьшить": "decrement",
+  "Введите username": "Enter username",
+  "Введите пароль": "Enter password"
 }
