@@ -61,7 +61,6 @@ export const Modal = (props: ModalProps) => {
     const mods = {
         [cls.opened]: isOpen,
         [cls.isClosing]: isClosing,
-        [cls[theme]]: true,
     };
     return (
         <Portal>
