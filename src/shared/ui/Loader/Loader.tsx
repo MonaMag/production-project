@@ -1,13 +1,12 @@
-import React from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import cls from './Loader.module.scss';
+import './Loader.scss';
 
 interface LoaderProps {
     className?: string;
 }
 
 export const Loader = ({ className }: LoaderProps) => (
-    <div className={classNames(cls.ldsEllipsis, {}, [className])}>
+    <div className={classNames('lds-ellipsis', {}, [className])}>
         <div />
         <div />
         <div />

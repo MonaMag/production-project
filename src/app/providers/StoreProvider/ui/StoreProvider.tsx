@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { Provider } from 'react-redux';
 import { createReduxStore } from 'app/providers/StoreProvider/config/store';
 import { StateSchema } from 'app/providers/StoreProvider/config/StateSchema';
@@ -16,6 +16,7 @@ export const StoreProvider = (props: StoreProviderProps) => {
     } = props;
 
     const store = createReduxStore(initialState as StateSchema);
+
     return (
         <Provider store={store}>
             {children}
