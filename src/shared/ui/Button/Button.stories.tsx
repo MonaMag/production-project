@@ -52,18 +52,12 @@ OutlineSizeXl.args = {
     size: ButtonSize.XL,
 };
 
-export const OutlineInvertedXl = Template.bind({});
-OutlineInvertedXl.args = {
-    children: 'Text',
-    theme: ButtonTheme.BACKGROUND_INVERTED,
-    size: ButtonSize.XL,
-};
-
 export const OutlineDark = Template.bind({});
 OutlineDark.args = {
     children: 'Text',
     theme: ButtonTheme.OUTLINE,
 };
+
 OutlineDark.decorators = [ThemeDecorator(Theme.DARK)];
 
 export const BackgroundTheme = Template.bind({});
