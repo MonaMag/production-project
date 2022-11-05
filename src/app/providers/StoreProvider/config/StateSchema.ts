@@ -9,6 +9,7 @@ import { ProfileSchema } from 'entities/Profile';
 import { AxiosInstance } from 'axios';
 import { To } from 'history';
 import { NavigateOptions } from 'react-router';
+import { AppDispatch } from 'app/providers/StoreProvider';
 
 export interface StateSchema {
     counter: CounterSchema;
@@ -33,11 +34,11 @@ export interface ReduxStoreWithManager extends EnhancedStore<StateSchema> {
 }
 
 export interface ThunkExtraArg {
-    api: AxiosInstance,
+    api: AxiosInstance;
     navigate?: (to: To, options?: NavigateOptions) => void,
 }
 
-export interface ThunkConfig<T>{
+export interface ThunkConfig<T> {
     rejectValue: T;
     extra: ThunkExtraArg;
     state: StateSchema;

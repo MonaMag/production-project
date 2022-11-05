@@ -1,23 +1,24 @@
-import React from 'react';
 import { classNames, Mods } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import { Text, TextAlign, TextTheme } from 'shared/ui/Text/Text';
 import { Input } from 'shared/ui/Input/Input';
 import { Loader } from 'shared/ui/Loader/Loader';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
-import { Currency, CurrencySelect } from 'entities/Currency';
-import { Country, CountrySelect } from 'entities/Country';
-import { Profile } from '../../model/types/profile';
+import { Currency } from 'entities/Currency/model/types/currency';
+import { CurrencySelect } from 'entities/Currency';
+import { Country } from 'entities/Country/model/types/country';
+import { CountrySelect } from 'entities/Country';
 import cls from './ProfileCard.module.scss';
+import { Profile } from '../../model/types/profile';
 
 interface ProfileCardProps {
     className?: string;
     data?: Profile;
-    isLoading?: boolean;
     error?: string;
+    isLoading?: boolean;
     readonly?: boolean;
-    onChangeFirstname: (value?: string) => void;
-    onChangeLastname: (value?: string) => void;
+    onChangeLastname?: (value?: string) => void;
+    onChangeFirstname?: (value?: string) => void;
     onChangeCity?: (value?: string) => void;
     onChangeAge?: (value?: string) => void;
     onChangeUsername?: (value?: string) => void;
@@ -30,8 +31,8 @@ export const ProfileCard = (props: ProfileCardProps) => {
     const {
         className,
         data,
-        error,
         isLoading,
+        error,
         readonly,
         onChangeFirstname,
         onChangeLastname,
@@ -39,15 +40,14 @@ export const ProfileCard = (props: ProfileCardProps) => {
         onChangeCity,
         onChangeAvatar,
         onChangeUsername,
-        onChangeCurrency,
         onChangeCountry,
+        onChangeCurrency,
     } = props;
-
     const { t } = useTranslation('profile');
 
     if (isLoading) {
         return (
-            <div className={classNames(cls.ProfileCard, {}, [className, cls.loading])}>
+            <div className={classNames(cls.ProfileCard, { [cls.loading]: true }, [className])}>
                 <Loader />
             </div>
         );
@@ -87,7 +87,7 @@ export const ProfileCard = (props: ProfileCardProps) => {
                 />
                 <Input
                     value={data?.lastname}
-                    placeholder={t('Ваше фамилия')}
+                    placeholder={t('Ваша фамилия')}
                     className={cls.input}
                     onChange={onChangeLastname}
                     readonly={readonly}
