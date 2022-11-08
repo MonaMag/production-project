@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Input } from 'shared/ui/Input/Input';
 
 const MainPage = () => {
     const { t } = useTranslation();
@@ -11,7 +10,7 @@ const MainPage = () => {
     };
 
     return (
-        <div>
+        <div style={{ color: 'blue' }}>
             {t('Главная страница')}
         </div>
     );
