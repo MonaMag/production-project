@@ -9,7 +9,7 @@
   "Обновить страницу": "Reload page",
   "throw error": "throw error",
   "Главная": "Main",
-  "О сайте": "About us",
+  "О нас": "About us",
   "Переключить": "Переключить",
   "Короткий язык": "En",
   "Войти": "Login",
@@ -22,5 +22,7 @@
   "Выйти": "Logout",
   "Укажите валюту": "Choose currency",
   "Укажите страну": "Choose country",
-  "Профиль": "Profile"
+  "Профиль": "Profile",
+  "Статьи": "Articles"
+
 }

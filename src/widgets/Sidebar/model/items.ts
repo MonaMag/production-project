@@ -21,7 +21,7 @@ export const SidebarItemsList: SidebarItemType[] = [
     {
         path: RoutePath.about,
         Icon: AboutIcon,
-        text: 'О сайте',
+        text: 'О нас',
     },
     {
         path: RoutePath.profile,
@@ -32,7 +32,7 @@ export const SidebarItemsList: SidebarItemType[] = [
     {
         path: RoutePath.articles,
         Icon: ArticleIcon,
-        text: 'Статья',
+        text: 'Статьи',
         authOnly: true,
     },
 ];
