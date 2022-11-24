@@ -7,9 +7,9 @@ import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useSelector } from 'react-redux';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { Page } from 'widgets/Page/Page';
-import { initArticlesPage } from 'pages/ArticlesPage/modal/services/initArticlePage/initArticlePage';
 import { useSearchParams } from 'react-router-dom';
-import { ArticlesPageFilters } from 'pages/ArticlesPage/ui/ArticlesPageFilters/ArticlesPageFilters';
+import { initArticlesPage } from '../../modal/services/initArticlePage/initArticlePage';
+import { ArticlesPageFilters } from '../ArticlesPageFilters/ArticlesPageFilters';
 import {
     getArticlesPageError, getArticlesPageInited,
     getArticlesPageIsLoading,
