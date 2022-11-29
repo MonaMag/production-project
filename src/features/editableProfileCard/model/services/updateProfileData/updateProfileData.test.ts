@@ -1,7 +1,7 @@
 import { TestAsyncThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
 import { Country } from 'entities/Country';
 import { Currency } from 'entities/Currency';
-import { ValidateProfileError } from '../../types/profile';
+import { ValidateProfileError } from '../../types/editableProfileCardSchema';
 import { updateProfileData } from './updateProfileData';
 
 const data = {
@@ -12,6 +12,7 @@ const data = {
     first: 'asd',
     city: 'asf',
     currency: Currency.USD,
+    id: '1',
 };
 
 describe('updateProfileData.test', () => {
