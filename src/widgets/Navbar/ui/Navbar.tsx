@@ -4,9 +4,7 @@ import React, { memo, useCallback, useState } from 'react';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { LoginModal } from 'features/AuthByUsername';
 import { useSelector } from 'react-redux';
-import {
-    getUserAuthData,
-} from 'entities/User';
+import { getUserAuthData } from 'entities/User';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
@@ -51,14 +49,12 @@ export const Navbar = memo(({ className }: NavbarProps) => {
                     <NotificationButton />
                     <AvatarDropdown />
                 </HStack>
-
             </header>
         );
     }
 
     return (
         <header className={classNames(cls.Navbar, {}, [className])}>
-
             <Button
                 theme={ButtonTheme.CLEAR_INVERTED}
                 className={cls.links}
