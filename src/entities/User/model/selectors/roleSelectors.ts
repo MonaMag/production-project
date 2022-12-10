@@ -1,5 +1,5 @@
-import { StateSchema } from 'app/providers/StoreProvider';
 import { createSelector } from '@reduxjs/toolkit';
+import { StateSchema } from '@/app/providers/StoreProvider';
 import { UserRole } from '../consts/userConsts';
 
 // в этом селекторе достаю весь массив ролей
