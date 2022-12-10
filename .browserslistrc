@@ -1,0 +1,4 @@
+# Browsers that we supports
+defaults
+not IE 11
+
