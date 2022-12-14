@@ -61,6 +61,7 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'mona-plugin/path-checker': ['error', { alias: '@' }],
+        'mona-plugin/public-api-imports': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,
