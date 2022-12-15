@@ -1,5 +1,8 @@
 import { Story } from '@storybook/react';
-import { Theme, ThemeProvider } from '@/app/providers/ThemeProvider';
+// это опять же не бизнес код и можно заигнорить
+// eslint-disable-next-line mona-plugin/layer-imports
+import { ThemeProvider } from '@/app/providers/ThemeProvider';
+import { Theme } from '@/shared/const/theme';
 
 export const ThemeDecorator = (theme: Theme) => (StoryComponent: Story) => (
     <ThemeProvider initialTheme={theme}>
