@@ -15,7 +15,7 @@ import {
     getRouteArticleDetails,
     getRouteArticleEdit,
     getRouteForbidden,
-    getRoutePanel,
+    getRouteAdmin,
     getRouteArticles,
     getRouteMain,
     getRouteProfile,
@@ -57,7 +57,7 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
         authOnly: true,
     },
     [AppRoutes.ADMIN_PANEL]: {
-        path: getRoutePanel(),
+        path: getRouteAdmin(),
         element: <AdminPanelPage />,
         authOnly: true,
         roles: [UserRole.MANAGER, UserRole.ADMIN],
