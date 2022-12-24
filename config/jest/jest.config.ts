@@ -3,7 +3,7 @@
  * https://jestjs.io/docs/configuration
  */
 
-import path from 'path';
+import * as path from 'path';
 
 export default {
     globals: {
